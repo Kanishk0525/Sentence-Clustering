@@ -85,7 +85,7 @@ def effective_length(sentence):
 def real_length(sentence):
     return len(word_tokenize(sentence))
 
-
+#loop for similarity matrix
 def similarity_matrix(text, vectorizer):
     sentences = split_into_sentences(text)
     vec_sentences = [word2vec_encode_text(s, vectorizer) for s in sentences]
